@@ -31,6 +31,11 @@ main {
   flex: 1 1 auto;
   margin-top: 24px;
 }
+image {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
 
 ul,
 ol,

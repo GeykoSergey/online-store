@@ -10,7 +10,7 @@
   max-width: 1200px;
   margin: 0px auto;
   display: flex;
-  padding: 0px 30px;
+  padding: 24px 0;
   align-items: center;
   justify-content: space-between;
   min-height: 70px;
@@ -21,6 +21,13 @@
   z-index: 5;
   color: var(--color-text-light);
 }
+
+.logo__img {
+  position: relative;
+  z-index: 5;
+  width: 100px;
+}
+
 .header__menu {
 }
 .menu {
