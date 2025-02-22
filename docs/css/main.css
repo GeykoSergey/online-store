@@ -2637,6 +2637,7 @@ button[type=reset]:hover {
   padding: 16px;
 }
 .brands__wrapper {
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
