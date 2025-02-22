@@ -1,0 +1,40 @@
+.main-catalog {
+  &__wrapper {
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+
+  &__item {
+    flex: 1 0 33.33%;
+  }
+}
+
+.list-reset {
+}
+
+.product {
+  &__info {
+  }
+
+  &__labels {
+  }
+
+  &__wish {
+  }
+
+  &__img {
+  }
+
+  &__title {
+  }
+
+  &__price {
+  }
+
+  &__dtn {
+  }
+}

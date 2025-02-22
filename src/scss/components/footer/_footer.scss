@@ -1,0 +1,43 @@
+// .footer * {
+//   border: 1px solid var(--border-color-secondary);
+//   border-radius: 8px;
+  
+// }
+
+.footer {
+  padding: 24px 0;
+  font-size: 1rem;
+  background-color: var(--bg-color-gray-lighten);
+
+  &__container {
+    padding: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color-secondary);
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-bottom {
+
+  }
+
+  &__logo {
+    margin-bottom: 1em;
+  }
+
+  &__cocials {
+    margin-bottom: 1em;
+  }
+}
+
+.footer {
+  &__logo {
+  }
+
+  &__cocials {
+  }
+}

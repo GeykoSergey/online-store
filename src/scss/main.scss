@@ -1,0 +1,43 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "vendor";
+@import "utils";
+@import "common";
+@import "./components/title";
+@import "./components/btn";
+@import "./components/form";
+// @import "./components/search-form";
+// @import "./components/show-more";
+@import "./components/spoiler";
+
+@import "./components/header";
+@import "./components/menu";
+@import "./components/user-panel";
+@import "./components/subscribe";
+@import "./components/support";
+
+// page-latest-news
+@import "./components/home-page/hero";
+@import "./components/home-page/brands";
+@import "./components/home-page/presentation";
+@import "./components/home-page/latest-news";
+
+@import "./components/featured-games";
+
+@import "./components/news";
+
+@import "./components/catalog";
+@import "./components/catalog-main";
+@import "./components/catalog-filter";
+@import "./components/catalog-dashboard";
+
+@import "./components/product";
+@import "./components/product-color-options";
+@import "./components/card";
+
+@import "./components/footer/footer";
+@import "./components/footer/footer-top";
+@import "./components/footer/footer-bottom";
+

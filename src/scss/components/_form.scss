@@ -1,0 +1,177 @@
+form {
+  border: 2px solid hsl(0deg, 0%, 90%);
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #333;
+  // border-radius: 0.25rem;
+  background-color: white;
+}
+
+/* Убираем стрелки в Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Убираем стрелки в Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  font: 1.25rem / 1.5 sans-serif;
+
+  border: 2px solid #78909c;
+}
+
+// input:focus,
+// select:focus,
+// textarea:focus {
+//   outline: none;
+//   box-shadow: var(--outline);
+// }
+
+textarea {
+  min-height: 10rem;
+}
+
+select {
+  appearance: none; /* Убираем стандартное оформление */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #fff;
+  border: 2px solid var(--gray-lighten);
+  padding: 6px 36px 6px 6px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  /* Добавляем иконку стрелки */
+  background-image: url("../../img/keyboard-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 24px;
+}
+
+/* Убираем стандартный стиль фокусировки */
+select:focus-visible {
+  outline: 0;
+  // box-shadow: var(--outline);
+}
+
+select option {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+/* Стилизация выбранного элемента */
+select option:checked {
+  background-color: #8f9194;
+  color: white;
+}
+
+// select option:active {
+//   background-color: #8f9194;
+//   color: white;
+// }
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-image: radial-gradient(
+    hsl(213deg, 73%, 50%) 40%,
+    transparent calc(40% + 1px)
+  );
+}
+
+input[type="checkbox"]:checked {
+  background: url("../../img/check.svg") no-repeat center;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: hsl(217deg, 7%, 64%);
+  opacity: 1; /* Firefox */
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  font: 1.25rem sans-serif;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: none;
+  // box-shadow: var(--outline);
+}
+
+button[type="submit"] {
+  // background-color: hsl(213, 73%, 50%);
+  color: white;
+}
+
+button[type="submit"]:hover {
+  // background-color: hsl(213, 73%, 40%);
+}
+
+button[type="reset"] {
+  margin-left: 1rem;
+  text-decoration: underline;
+}
+
+button[type="reset"]:hover {
+  text-decoration: none;
+}
+
+.large-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font: 700 1.5rem sans-serif;
+}
+
+
+// ====================================================

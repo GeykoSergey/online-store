@@ -1,0 +1,35 @@
+.brands {
+  position: relative;
+  z-index: 10;
+  padding: 16px;
+  
+  &__wrapper {
+    // background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+  }
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  &__item {
+    
+  }
+
+  &__link {
+  }
+
+  &__img {
+  }
+}
+
+.hero {
+
+  &__brands {
+    position: relative;
+    z-index: 10;
+  }
+}

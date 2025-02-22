@@ -1,0 +1,19 @@
+@include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+
+@font-face {
+    src: url('../fonts/Montserat-Regular.woff2') format('woff2'),
+         url('../fonts/Montserat-Regular.woff') format('woff');
+    font-family: 'Montserat';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    src: url('../fonts/Montserat-Medium.woff2') format('woff2'),
+         url('../fonts/Montserat-Medium.woff') format('woff');
+    font-family: 'Montserat';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,37 @@
+.section-heading {
+  max-width: 980px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 32px;
+}
+
+.main-title {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.section-title {
+}
+
+.post-title {
+}
+
+.product-title {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.accent-title,
+.hilight {
+  background-image: linear-gradient(to right, #5061cf 0%, #3dc5cf 100%);
+  background-clip: text;
+  color: transparent;
+}

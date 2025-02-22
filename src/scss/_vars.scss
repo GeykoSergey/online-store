@@ -1,0 +1,79 @@
+:root {
+  --main-font-family: "Urbanist", sans-serif;
+  --accent-font-family: "Space Grotesk", sans-serif;
+
+  --bg-color-main: #263238;
+  --bg-color-accent: rgba(61, 174, 226, 0.322);
+  // --bg-color-brand:
+  // --bg-color-primary:
+  // --bg-color-secondary:
+  --bg-color-overlay: rgba(37, 49, 55, 0.95);
+
+  // --color-main:
+  // --color-accent:
+  --color-brand: #6f76c0;
+  // --color-primary:
+  // --color-secondary:
+
+  // --text-color-main:
+  // --text-color-accent:
+  // --text-color-brand:
+
+  --btn-primary-text-color: #eceff1;
+  --btn-primary-text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
+  --btn-primary-bg: linear-gradient(to right, #5061cf 0%, #3d9acf 100%);
+  --btn-primary-box-shadow-hover: 0px 10px 25px -6px rgba(50, 162, 237, 0.79);
+
+  --btn-secondary-text-color: #1d1e1f;
+  --btn-secondary-text-color-hover: #eceff1;
+  --btn-secondary-border-color: #000000;
+  --btn-secondary-bg: #fff;
+  --btn-secondary-bg-hover: #000000;
+
+  --outline: 0px 0px 0px 2px rgba(255, 255, 255, 0.6),
+    0px 0px 7px 4px rgb(95, 95, 97);
+
+  --gray-darkest: hsl(200deg, 18%, 26%);
+  --gray-darker: hsl(199deg, 18%, 33%);
+  --gray-darken: hsl(199deg, 18%, 40%);
+  --gray-dark: hsl(200deg, 18%, 46%);
+  --gray: hsl(200, 15%, 54%);
+  --gray-light: hsl(200deg, 16%, 62%);
+  --gray-lighten: #b0bec5;
+  --gray-lighter: #cfd8dc;
+  --gray-lighter: rgb(255, 255, 255);
+
+
+  --box-shadow-main: 0px 0px 13px -2px rgba(0, 0, 0, 0.42);;
+  --box-shadow-hover: 0px 10px 25px -6px rgba(50, 162, 237, 0.79);
+}
+
+.light-theme {
+  --text-color-main: #3e4b52;
+  --text-color-accent: linear-gradient(to right, #5061cf 0%, #3dc5cf 100%);
+  --text-color-primary: #263238;
+  --text-color-secondary: #263238;
+  --text-color-info: #62c8fc;
+  --text-color-active: #6053d8;
+  --text-color-success: #5ea064;
+  --text-color-danger: #da5746;
+  --text-color-warning: #f09c3c;
+  --text-color: #263238;
+
+  --bg-color-main: #fafafa;
+  --bg-color-primary: #dddbdb;
+  --bg-color-accent: rgba(61, 174, 226, 0.322);
+  --bg-gradient-top-bottom: rgba(255, 255, 255, 0.8) linear-gradient(to top, #ffffff 0%, transparent 50%, #ffffff 100%);
+
+  --border-color-prymary: #bbbfc0;
+  --border-color-secondary: #cfd8dc;
+}
+
+.dark-theme {
+  --text-color-primary: #fafafa;
+  --bg-color-main: #101518;
+  
+  --icon-img-color: hsl(197, 3%, 47%);
+  --icon-img-color--hover: hsl(197, 3%, 47%);
+  --icon-bg-color: hsl(195, 17%, 95%);
+}

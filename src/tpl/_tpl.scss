@@ -1,0 +1,96 @@
+.nav {
+  --header-height: 63px;
+  position: fixed;
+  right: 0;
+  top: var(--header-height);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 30px 0;
+  width: 60%;
+  max-width: 300px;
+  height: calc(100vh - var(--header-height));
+  background-color: var(--main-bg);
+  transform: translateX(100%);
+  transition: transform 0.6s ease-in-out;
+}
+
+.nav--visible {
+  transform: none;
+}
+
+//Burger
+
+.icon-menu {
+	display: none;
+	@media (max-width: em(900)) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: $main-bg-color;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+      
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+snip {
+	font-family: var();
+	font-size: 24px;
+	line-height: 1.2;
+	color: var();
+	background-color: var();
+}
+
+.bg__img {
+	width: 100%;
+	margin: 0px 0px 20px 0px;
+	padding-bottom: 80%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

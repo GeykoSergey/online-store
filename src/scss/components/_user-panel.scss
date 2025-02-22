@@ -1,0 +1,19 @@
+.user-panel {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+
+    & svg {
+      fill: #979696;
+    }
+  }
+}

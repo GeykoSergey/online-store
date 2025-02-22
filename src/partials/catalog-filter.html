@@ -1,0 +1,170 @@
+<div class="catalog-filter__overlay">
+  <div class="catalog-filter">
+    <div class="catalog-filter__wrapper">
+      <header class="catalog-filter__header">
+        <h3 class="catalog-filter__title">Підбір за параметрами</h3>
+        <button class="btn-reset btn-icon btn-icon--light filter-btn__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#5f6368"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </button>
+      </header>
+      <form action="#!" class="catalog-filter__form form-filter">
+        <fieldset class="form-filter__fieldset">
+          <legend class="form-filter__legend">Тільки у наявності</legend>
+          <div class="custom-checkbox-toggle">
+            <input class="tgl tgl-light" id="instock" type="checkbox" checked />
+            <label class="tgl-btn" for="instock"></label>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend class="form-filter__legend" data-name="filter-legend">
+            Бренд
+          </legend>
+          <ul class="list-reset form-filter__list">
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input id="nike" type="checkbox" />
+                <label for="nike" class="custom-checkbox__label">Nike</label>
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input id="adidas" type="checkbox" checked />
+                <label for="adidas" class="custom-checkbox__label"
+                  >Adidas</label
+                >
+              </div>
+            </li>
+            <li class="form-filter__item">
+              <div class="custom-checkbox">
+                <input
+                  class="custom-checkbox__input"
+                  id="puma"
+                  type="checkbox"
+                />
+                <label for="puma" class="custom-checkbox__label">Puma</label>
+              </div>
+            </li>
+          </ul>
+          <button type="submit" class="btn-reset form-filter__more-btn">
+            Показати ще
+          </button>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend class="form-filter__legend" data-name="filter-legend">
+            Ціна
+          </legend>
+          <div class="custom__input-range">
+            <div class="range-slider" id="slider"></div>
+            <div class="range-slider__input-wrapper">
+              <label class="range-slider__label">
+                <span class="range-slider__text">від</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="500"
+                  id="input-0"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+              <label class="range-slider__label">
+                <span class="range-slider__text">до</span>
+                <input
+                  type="number"
+                  class="range-slider__input"
+                  min="500"
+                  max="10000"
+                  placeholder="10000"
+                  id="input-1"
+                />
+                <span class="range-slider__text">₴</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-filter__fieldset">
+          <legend class="form-filter__legend" data-name="filter-legend">
+            Сезон
+          </legend>
+          <div class="form-filter__list-wrapper">
+            <ul class="list-reset form-filter__list">
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="summer"
+                    type="checkbox"
+                  />
+                  <label for="summer" class="custom-checkbox__label">
+                    Літо
+                    <span class="form-filter__amount">(64)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="winter"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="winter" class="custom-checkbox__label">
+                    Зима
+                    <span class="form-filter__amount">(37)</span>
+                  </label>
+                </div>
+              </li>
+              <li class="form-filter__item">
+                <div class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__input"
+                    id="all-season"
+                    type="checkbox"
+                  />
+                  <label for="all-season" class="custom-checkbox__label">
+                    Всесезон
+                    <span class="form-filter__amount">(101)</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <button type="submit" class="btn-reset form-filter__more-btn">
+              Показати ще
+            </button>
+          </div>
+        </fieldset>
+        <fieldset>
+          <button class="btn-reset btn-primary" type="submit">Apply</button>
+          <button class="btn-reset btn-secondary" type="reset">Reset</button>
+        </fieldset>
+      </form>
+      <footer class="filter__footer">
+        <button class="btn-reset btn-icon btn-icon--light filter-btn__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#5f6368"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>

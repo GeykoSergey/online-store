@@ -1,0 +1,47 @@
+.swiper-pagination-bullet {
+	margin: 0 15px;
+	width: 10px;
+	height: 10px;
+	background-color: tomato;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: static;
+	margin-left: 10px;
+}
+
+.swiper-container {
+	padding-bottom: 50px;
+}
+
+.card-slider {
+	display: flex;
+  max-width: 600px;
+}
+
+.slider-nav {
+	overflow: hidden;
+	margin-right: 10px;
+	width: 100px;
+	max-height: 500px;
+}
+
+.slider-main {
+	overflow: hidden;
+	max-width: 500px;
+}
+
+.slider-nav .swiper-slide {
+	width: 100px;
+	height: 100px;
+}
+
+.slider-nav .swiper-slide img {
+	max-height: 100%;
+}
