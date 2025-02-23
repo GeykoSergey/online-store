@@ -2594,7 +2594,7 @@ button[type=reset]:hover {
 .hero__content {
   padding: 100px 24px;
   position: relative;
-  z-index: 20;
+  z-index: 1;
   min-height: 500px;
 }
 .hero__title {
@@ -2630,7 +2630,7 @@ button[type=reset]:hover {
 
 .brands {
   position: relative;
-  z-index: 10;
+  z-index: 1;
   padding: 16px;
 }
 .brands__wrapper {
