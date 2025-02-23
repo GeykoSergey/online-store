@@ -225,15 +225,17 @@ __webpack_require__.r(__webpack_exports__);
 const disableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
   const pagePosition = window.scrollY;
-  const paddingOffset = `${window.innerWidth - _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.offsetWidth}px`;
+  console.log(pagePosition);
+  const paddingOffset = `${window.innerWidth - document.documentElement.offsetWidth}px`;
   _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.style.scrollBehavior = 'none';
   fixBlocks.forEach(el => {
     el.style.paddingRight = paddingOffset;
   });
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.paddingRight = paddingOffset;
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.classList.add('dis-scroll');
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.dataset.position = pagePosition;
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.top = `-${pagePosition}px`;
+  document.documentElement.style.paddingRight = paddingOffset;
+  document.documentElement.classList.add('dis-scroll');
+  document.documentElement.dataset.position = pagePosition;
+  document.documentElement.style.top = `-${pagePosition}px`;
+  console.log(paddingOffset);
 };
 
 /***/ }),
@@ -253,19 +255,19 @@ __webpack_require__.r(__webpack_exports__);
 const enableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
   const body = document.body;
-  const pagePosition = parseInt(_vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.dataset.position, 10);
+  const pagePosition = parseInt(document.documentElement.dataset.position, 10);
   fixBlocks.forEach(el => {
     el.style.paddingRight = '0px';
   });
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.paddingRight = '0px';
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.top = 'auto';
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.classList.remove('dis-scroll');
+  document.documentElement.style.paddingRight = '0px';
+  document.documentElement.style.top = 'auto';
+  document.documentElement.classList.remove('dis-scroll');
   window.scroll({
     top: pagePosition,
     left: 0
   });
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.removeAttribute('data-position');
-  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.style.scrollBehavior = 'smooth';
+  document.documentElement.removeAttribute('data-position');
+  document.documentElement.style.scrollBehavior = 'smooth';
 };
 
 /***/ }),

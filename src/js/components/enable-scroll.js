@@ -3,16 +3,16 @@ import vars from '../_vars.js';
 export const enableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
   const body = document.body;
-  const pagePosition = parseInt(vars.bodyEl.dataset.position, 10);
+  const pagePosition = parseInt(document.documentElement.dataset.position, 10);
   fixBlocks.forEach(el => { el.style.paddingRight = '0px'; });
-  vars.bodyEl.style.paddingRight = '0px';
+  document.documentElement.style.paddingRight = '0px';
 
-  vars.bodyEl.style.top = 'auto';
-  vars.bodyEl.classList.remove('dis-scroll');
+  document.documentElement.style.top = 'auto';
+  document.documentElement.classList.remove('dis-scroll');
   window.scroll({
     top: pagePosition,
     left: 0
   });
-  vars.bodyEl.removeAttribute('data-position');
-  vars.htmlEl.style.scrollBehavior = 'smooth';
+  document.documentElement.removeAttribute('data-position');
+  document.documentElement.style.scrollBehavior = 'smooth';
 }

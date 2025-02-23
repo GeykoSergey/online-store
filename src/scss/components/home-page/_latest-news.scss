@@ -32,6 +32,14 @@
   flex: 0 1 33.33%;
   padding: 16px;
 
+  @media (max-width: 1024px) {
+    flex: 1 1 50%;
+  }
+
+  @media (max-width: 724px) {
+    flex: 1 1 100%;
+  }
+
   &__wrapper {
     position: relative;
     display: flex;

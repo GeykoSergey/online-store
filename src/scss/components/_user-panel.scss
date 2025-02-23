@@ -11,14 +11,12 @@
   }
 
   &__link {
-    // display: inline-flex;
-    // align-items: center;
-    // justify-content: center;
+    color: var(--text-color-primary);
     padding: 4px;
 
 
     & svg {
-      fill: #979696;
+      fill: currentColor;
     }
   }
 }
