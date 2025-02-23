@@ -1,90 +1,128 @@
 <header class="header">
-  <div class="container">
-    <div class="header__container">
-      <a href="index.html" class="logo header__logo hilight" aria-label="logo">
-        <!-- <svg>
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg> -->
-        <img class="logo__img" src="./../img/logo.png" alt="Image" />
-        <span>GamesStore</span>
-      </a>
-      <nav class="menu header__menu" data-menu>
+  <div class="header__container">
+    <a href="index.html" class="logo header__logo hilight" aria-label="logo">
+      <img class="logo__img" src="img/logo.png" alt="Image" />
+      <span>GamesStore</span>
+    </a>
+    <div class="header__menu menu">
+      <button
+        class="btn-reset menu__icon"
+        data-burger
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+      </button>
+      <nav class="menu__body" data-menu>
         <ul class="list-reset menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link--current">Home</a>
+          <li>
+            <a href="#" class="menu__link">Home</a>
           </li>
-          <li class="menu__item">
-            <a href="catalog.html" class="menu__link">Store</a>
+          <li>
+            <a href="#" class="menu__link">Store</a>
           </li>
-          <li class="menu__item">
+          <li>
             <a href="#" class="menu__link">Services</a>
           </li>
-          <li class="menu__item">
+          <li>
             <a href="#" class="menu__link">News</a>
           </li>
-          <li class="menu__item">
-            <a href="card.html" class="menu__link">Support</a>
+          <li>
+            <a href="#" class="menu__link">Support</a>
           </li>
-          <li class="menu__item">
-            <a href="card.html" class="menu__link">Contact</a>
+          <li>
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+          <li>
+            <div class="user-panel__item">
+              <a
+                href="#"
+                class="btn-reset btn-icon cart"
+                aria-label="Go to shopping cart"
+              >
+                <svg height="24px" width="24px" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#shopping-bag"></use>
+                </svg>
+                <span class="cart__quantity">3</span>
+                <span>Go to shopping cart</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="user-panel__item">
+              <a
+                class="btn-reset btn-icon search"
+                aria-label="Start your search"
+              >
+                <svg width="24px" height="24px" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+                <span>Start your search</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="user-panel__item">
+              <a
+                href="#"
+                class="btn-reset btn-icon personal-account"
+                aria-label="Go to your personal account"
+              >
+                <svg height="24px" width="24px" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#account"></use>
+                </svg>
+                <span>Go to your personal account</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="user-panel__item">
+              <a
+                href="#"
+                class="btn-reset btn-icon switch-theme"
+                aria-label="Change color theme"
+              >
+                <svg height="24px" width="24px" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#routine"></use>
+                </svg>
+                <span>Change color theme</span>
+              </a>
+            </div>
           </li>
         </ul>
       </nav>
-
-      <div class="user-panel header__user-panel">
-        <div class="user-panel__item">
-          <button
-            class="btn-reset btn-icon search"
-            aria-label="Почати пошук"
-          >
-            <svg width="24px" height="24px" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="user-panel__item">
-          <a
-            href="#"
-            class="btn-reset btn-icon personal-account"
-            aria-label="Перейти до особистого кабінету"
-          >
-            <svg height="24px" width="24px" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#account"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="user-panel__item">
-          <a
-            href="#"
-            class="btn-reset btn-icon switch-theme"
-            aria-label="Змінити тему"
-          >
-            <svg height="24px" width="24px" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#routine"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="user-panel__item">
-          <a
-            href="#"
-            class="btn-reset btn-icon cart"
-            aria-label="Перейти до кошику покупок"
-          >
-            <svg height="24px" width="24px" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#shopping-bag"></use>
-            </svg>
-            <span class="cart__quantity">3</span>
-          </a>
-        </div>
-        <button
-          class="burger"
-          data-burger
-          aria-label="Открыть меню"
-          aria-expanded="false"
-        >
-          <span class="burger__line"></span>
-        </button>
-      </div>
     </div>
   </div>
 </header>
+
+<!-- <div class="user-panel header__user-panel">
+  <div class="user-panel__item">
+    <button class="btn-reset btn-icon search" aria-label="Почати пошук">
+      <svg width="24px" height="24px" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="user-panel__item">
+    <a
+      href="#"
+      class="btn-reset btn-icon personal-account"
+      aria-label="Перейти до особистого кабінету"
+    >
+      <svg height="24px" width="24px" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#account"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="user-panel__item">
+    <a
+      href="#"
+      class="btn-reset btn-icon switch-theme"
+      aria-label="Змінити тему"
+    >
+      <svg height="24px" width="24px" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#routine"></use>
+      </svg>
+    </a>
+  </div>
+</div> -->

@@ -178,31 +178,31 @@ __webpack_require__.r(__webpack_exports__);
   const menuItems = document?.querySelectorAll("[data-menu-item]");
   const overlay = document?.querySelector("[data-menu-overlay]");
   burger?.addEventListener("click", e => {
-    burger?.classList.toggle("burger--active");
-    menu?.classList.toggle("menu--active");
-    if (menu?.classList.contains("menu--active")) {
+    burger?.classList.toggle("_active");
+    menu?.classList.toggle("_active");
+    if (menu?.classList.contains("_active")) {
       burger?.setAttribute("aria-expanded", "true");
-      burger?.setAttribute("aria-label", "Закрыть меню");
+      burger?.setAttribute("aria-label", "Close menu");
       (0,_disable_scroll_js__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
     } else {
       burger?.setAttribute("aria-expanded", "false");
-      burger?.setAttribute("aria-label", "Открыть меню");
+      burger?.setAttribute("aria-label", "Open menu");
       (0,_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     }
   });
   overlay?.addEventListener("click", () => {
     burger?.setAttribute("aria-expanded", "false");
-    burger?.setAttribute("aria-label", "Открыть меню");
-    burger.classList.remove("burger--active");
-    menu.classList.remove("menu--active");
+    burger?.setAttribute("aria-label", "Open menu");
+    burger.classList.remove("_active");
+    menu.classList.remove("_active");
     (0,_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
   });
   menuItems?.forEach(el => {
     el.addEventListener("click", () => {
-      burger?.setAttribute("aria-expanded", "false");
+      burger?.setAttribute("aria-expanded", "Open menu");
       burger?.setAttribute("aria-label", "Открыть меню");
-      burger.classList.remove("burger--active");
-      menu.classList.remove("menu--active");
+      burger.classList.remove("_active");
+      menu.classList.remove("_active");
       (0,_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     });
   });
@@ -586,7 +586,7 @@ const productsSlider = document.querySelector(".products-slider");
 // const cardSlider = document.querySelector(".card-slider");
 
 new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](newsSlider, {
-  // slidesPerView: 4,
+  // slidesPerView: 1.5,
   spaceBetween: 24,
   scrollbar: {
     el: ".news-slider__scroll",

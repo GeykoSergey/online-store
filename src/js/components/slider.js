@@ -8,7 +8,7 @@ const productsSlider = document.querySelector(".products-slider");
 // const cardSlider = document.querySelector(".card-slider");
 
 new Swiper(newsSlider, {
-  // slidesPerView: 4,
+  // slidesPerView: 1.5,
   spaceBetween: 24,
   scrollbar: {
     el: ".news-slider__scroll",

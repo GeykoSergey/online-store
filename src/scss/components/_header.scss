@@ -1,9 +1,11 @@
 .header {
   background-color: var(--bg-color-gray-lighten);
+  background-color: rgb(158, 216, 158);
 
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 24px 0;
   }
@@ -38,8 +40,8 @@
   }
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
+// .header__nav {
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
