@@ -13,10 +13,17 @@
 
   &__btn {
     position: relative;
-    border: 1px solid #535353;
     border-radius: 50%;
     width: 32px;
     height: 32px;
+    background-color: var(--color-brand);
+    transition: background-color 0.3s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--color-brand--hover);
+      }
+    }
 
     &::before {
       content: "";

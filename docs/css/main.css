@@ -6,6 +6,7 @@
   --bg-color-accent: rgba(61, 174, 226, 0.322);
   --bg-color-overlay: rgba(37, 49, 55, 0.95);
   --color-brand: #6f76c0;
+  --color-brand--hover: #5a60a3;
   --btn-primary-text-color: #eceff1;
   --btn-primary-text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
   --btn-primary-bg: linear-gradient(to right, #5061cf 0%, #3d9acf 100%);
@@ -43,18 +44,24 @@
   --text-color: #263238;
   --bg-color-main: #fafafa;
   --bg-color-primary: #dddbdb;
+  --bg-color-secondary: #8f8e8e;
   --bg-color-accent: rgba(61, 174, 226, 0.322);
   --bg-gradient-top-bottom: rgba(255, 255, 255, 0.8) linear-gradient(to top, #ffffff 0%, transparent 50%, #ffffff 100%);
   --border-color-prymary: #bbbfc0;
-  --border-color-secondary: #cfd8dc;
+  --border-color-secondary: #a8adaf;
+  --linear-gradient-to-right: linear-gradient(to right, #dfdddd 25%, transparent 100%);
+  --icon-img-color: hsl(197, 3%, 47%);
+  --icon-img-color--hover: hsl(196, 5%, 61%);
+  --icon-bg-color: hsl(192, 3%, 70%);
 }
 
 .dark-theme {
   --text-color-primary: #fafafa;
   --bg-color-main: #101518;
+  --linear-gradient-to-right: linear-gradient(to right, #0e0e0f 25%, transparent 100%);
   --icon-img-color: hsl(197, 3%, 47%);
   --icon-img-color--hover: hsl(197, 3%, 47%);
-  --icon-bg-color: hsl(195, 17%, 95%);
+  --icon-bg-color: hsl(192, 3%, 70%);
 }
 
 /* stylelint-disable */
@@ -2015,11 +2022,11 @@ a.btn--disabled {
   justify-content: center;
   font-size: 1rem;
   padding: 4px;
-  border: 1px solid var(--icon-img-color);
-  border-radius: 4px;
   color: var(--text-color-primary);
-  -webkit-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
-  transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  -webkit-transition: color 0.3s ease, border-color 0.3s ease;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 .btn-icon svg {
   width: 2em;
@@ -2030,7 +2037,6 @@ a.btn--disabled {
   .btn-icon:hover {
     border: 1px solid var(--icon-img-color--hover);
     color: var(--icon-img-color--hover);
-    background-color: var(--icon-bg-color);
   }
 }
 @media (hover: none) {
@@ -2580,30 +2586,20 @@ button[type=reset]:hover {
 .user-panel__item:not(:last-child) {
   margin-right: 8px;
 }
-.user-panel__link {
-  color: var(--text-color-primary);
-  padding: 4px;
-}
-.user-panel__link svg {
-  fill: currentColor;
-}
 
-.hero {
-  min-height: 100%;
-}
 .hero__container {
   position: relative;
-  min-height: 100%;
 }
 .hero__content {
   padding: 100px 24px;
   position: relative;
   z-index: 1;
   min-height: 500px;
+  max-width: 600px;
 }
 .hero__title {
   font-size: 72px;
-  color: var;
+  color: var(--text-color-primary);
 }
 .hero__img-wrapper {
   position: absolute; /* Обёртка для позиционирования */
@@ -2627,8 +2623,7 @@ button[type=reset]:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #000000), to(transparent));
-  background-image: linear-gradient(to right, #000000 25%, transparent 100%);
+  background-image: var(--linear-gradient-to-right);
   pointer-events: none; /* Чтобы не мешал кликам */
 }
 
@@ -2720,6 +2715,11 @@ button[type=reset]:hover {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 600px) {
+  .latest-news__container {
+    padding: 8px;
+  }
+}
 .latest-news__container::after {
   content: "";
   position: absolute;
@@ -2750,6 +2750,7 @@ button[type=reset]:hover {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+    padding: 8px;
   }
 }
 .news__wrapper {
@@ -2827,10 +2828,17 @@ button[type=reset]:hover {
 }
 .news-slider__btn {
   position: relative;
-  border: 1px solid #535353;
   border-radius: 50%;
   width: 32px;
   height: 32px;
+  background-color: var(--color-brand);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+@media (any-hover: hover) {
+  .news-slider__btn:hover {
+    background-color: var(--color-brand--hover);
+  }
 }
 .news-slider__btn::before {
   content: "";

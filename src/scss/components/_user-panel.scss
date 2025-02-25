@@ -9,14 +9,4 @@
   &__item:not(:last-child) {
     margin-right: 8px;
   }
-
-  &__link {
-    color: var(--text-color-primary);
-    padding: 4px;
-
-
-    & svg {
-      fill: currentColor;
-    }
-  }
 }
